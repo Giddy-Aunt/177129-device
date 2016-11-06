@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link  rel="stylesheet" href="css/styl.css">
   </head>
   <body>
     <div class="main-container">
@@ -14,13 +16,33 @@
           <div class="user-block__search">
             <form action="#" class="search-form" method="get">
               <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
-              <label for="search-field">Поиск по сайту</label>
+              <label for="search-field">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
+                </span>
+                Поиск по сайту
+              </label>
             </form>
           </div>
           <div class="user-block__btns">
-            <a href="#" class="user-block__btn user-block__btn--enter">Войти</a>
-            <a href="#" class="user-block__btn user-block__btn--compare">Сравнить</a>
-            <a href="#" class="user-block__btn user-block__btn--basket">Корзина</a>
+            <a href="#" class="user-block__btn user-block__btn--enter">
+              <span class="user-block__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
+              </span>
+              Войти
+            </a>
+            <a href="#" class="user-block__btn user-block__btn--compare">
+              <span class="user-block__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
+              </span>
+              Сравнить
+            </a>
+            <a href="#" class="user-block__btn user-block__btn--basket">
+              <span class="user-block__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
+              </span>
+              Корзина
+            </a>
           </div>
         </div>
         <nav class="main-navigation">
@@ -50,7 +72,7 @@
           <div class="slider__wpapper">
             <div class="slider__slides">
               <div class="slider__slide slider__slide--1">
-                <div class="slider__picture"><img src="http://placehold.it/420x480" alt="Палка для селфи" width="420" height="480"></div>
+                <div class="slider__picture"><img src="img/photo__slider-1.png" alt="Палка для селфи" width="384" height="486"></div>
                 <div class="slider__text">
                   <div class="slider__slide-number">01</div>
                   <b class="slider__slogan">Делай селфи, как Бен Стиллер!</b>
@@ -73,7 +95,7 @@
                 </div>
               </div>
               <div class="slider__slide slider__slide--2">
-                <div class="slider__picture"><img src="http://placehold.it/420x480" alt="Фитнесс-браслет" width="420" height="480"></div>
+                <div class="slider__picture"><img src="img/photo__slider-2.png" alt="Фитнесс-браслет" width="345" height="485"></div>
                 <div class="slider__text">
                   <div class="slider__slide-number">02</div>
                   <b class="slider__slogan">Худеем правильно!</b>
@@ -88,7 +110,7 @@
                 </div>
               </div>
               <div class="slider__slide slider__slide--3">
-                <div class="slider__picture"><img src="http://placehold.it/420x480" alt="Квадрокоптер" width="420" height="480"></div>
+                <div class="slider__picture"><img src="img/photo__slider-3.png" alt="Квадрокоптер" width="526" height="334"></div>
                 <div class="slider__text">
                   <div class="slider__slide-number">03</div>
                   <b class="slider__slogan">Порхает как бабочка, жалит как пчела!</b>
@@ -108,7 +130,7 @@
               </div>
             </div>
             <div class="slider__controls">
-              <input type="radio" name="slider-control" id="slider-control-1">
+              <input type="radio" name="slider-control" id="slider-control-1" checked>
               <input type="radio" name="slider-control" id="slider-control-2">
               <input type="radio" name="slider-control" id="slider-control-3">
               <label class="slider__control" for="slider-control-1"></label>
@@ -144,9 +166,13 @@
 
         <section class="services">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
+          <div class="tab-control-radios">
+            <input type="radio" name="tab-control" id="tab-control-1">
+            <input type="radio" name="tab-control" id="tab-control-2">
+            <input type="radio" name="tab-control" id="tab-control-3">
+          </div>
           <div class="services__item">
             <div class="services__tab-control">
-              <input type="radio" id="tab-control-1">
               <label for="tab-control-1">Доставка</label>
             </div>
             <div class="services__tab-content">
@@ -156,7 +182,6 @@
           </div>
           <div class="services__item">
             <div class="services__tab-control">
-              <input type="radio" id="tab-control-2">
               <label for="tab-control-2">Гарантия</label>
             </div>
             <div class="services__tab-content">
@@ -166,7 +191,6 @@
           </div>
           <div class="services__item">
             <div class="services__tab-control">
-              <input type="radio" id="tab-control-3">
               <label for="tab-control-3">Кредит</label>
             </div>
             <div class="services__tab-content">
@@ -180,16 +204,16 @@
           <h2 class="visually-hidden">Популярные производители</h2>
           <ul class="brands__list">
             <li class="brand-logo">
-              <a href="#"><img src="http://placehold.it/260x100" alt="DJI"></a>
+              <a href="#"><img src="img/logo__brand-1.jpg" width="260" height="100" alt="DJI"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="http://placehold.it/260x100" alt="SP Gadgets"></a>
+              <a href="#"><img src="img/logo__brand-2.jpg" width="260" height="100" alt="SP Gadgets"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="http://placehold.it/260x100" alt="GoPro"></a>
+              <a href="#"><img src="img/logo__brand-3.jpg" width="260" height="100" alt="GoPro"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="http://placehold.it/260x100" alt="Vive"></a>
+              <a href="#"><img src="img/logo__brand-4.jpg" width="260" height="100" alt="Vive"></a>
             </li>
            </ul>
         </section>
@@ -212,7 +236,7 @@
             <section class="contacts">
               <h2 class="section-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-              <div class="map" id="map"><img src="http://placehold.it/560x222" alt="Карта с местоположением магазина"></div>
+              <div class="map" id="map"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></div>
               <a href="#" class="btn">Напишите нам</a>
             </section>
           </div>
@@ -233,22 +257,47 @@
               </ul>
             </div>
             <div class="social">
-              <a href="#" class="social-btn social-btn--facebook">Фейсбук</a>
-              <a href="#" class="social-btn social-btn--instagram">Инстаграм</a>
-              <a href="#" class="social-btn social-btn--twitter">Твиттер</a>
+              <a href="#" class="social-btn social-btn--facebook" title="Мы в Фейсбуке">
+                <span class="social-btn__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAHNSURBVEjHrZbheYIwEIZfeRwgIzACnUCcQDpBWaEbuAHdADeoToCdADagG4QNrj8SBSEJSvn44WO4fLn7LtzdBh8UGTsSksFaQ8MPZzpeQkyJ2Kemsk99XyuJn6VSlkpTkE7ephRoS6nmyTI0QksetMppETRZmKxAEIonzlUcra0XJYJ2BOhDikYo/Z7phzzOI0G7PcwWkPWEdw03VokWxZ6rZ1M8uH8nfkchV3S8DVfLgKgJ1f2+CUI7sTg+KhgjtJ5sxmiEmiMpKSk1MrFRtEgvVIl471k5yl3loIO8t1JotFfq8Ts3HWjExJf77w4gVHcPWqueC4WJMGIHXJwmGd+Dfx/2sz87bS/ADnCK2wfQe3fLr08YoR78BAOd1866FcFLxTDxWncA2+BmRUpHY4kUoLxfjrFxhhTSzncLKoQkCpz1PsnilS8+AzuaLXiL5ZXrSPh9UBggollQlty6NYaOuZr/BFIwdBfg8G+6A/BjYg6VgMfM+mFLQETHGTXTCOeQozjdLniofAp1oHAajMpnqLjrQVn3STIo7nOtJx7IMG46Bo7Ws1pjfHR5tbZ9U3C1oQJWHnmMhisOZObcFcdFg8XD7Cbg5YJR+w/HrwSO80hOmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjowNSswMDowMOKSzdsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MDUrMDA6MDCTz3VnAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
+                </span>Фейсбук</a>
+              <a href="#" class="social-btn social-btn--instagram" title="Мы в Инстаграме">
+                <span class="social-btn__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIkSURBVEjHtZbhlaIwFEYvcyiADiYlZCowW8HawWY60ArUCpitADrQqUCsALYC3Aqgg8yPBIxI0HHZj3PEkOQm7+XlJRFhSZYskCT9l5aKEwcqvilNjcFgaDj2T+O+1ejHUUuHOqIRgzqB5uiQy/uohD0GQ3YDuoZmGAx7zxGj3qoxlKgHbFCUGGpkGNZgyKZHvLIkw9CMA4WDfU8WOOKY8glYByy7QuTeWzYU/PAMkRMeLKho+9IRxY6tb6ih8Xym+wgLPY0XeQkNxhocA7ABdv14SzIg529wdq9oMloOALTsSNnwfplb7TWuMcGoT1AoBHqkj1uQFMPqyvCSkFYufGF/AbjvKbwASyD3cPAZxCX97x/X1iq3nBiBoPDWaUwCwZkzkLMAft+0aClQiBgJnCZQktSFTMGayguma51QSIurBlW/WHi4hIpPfqI4ei3FoE8FyNhN9da4i97JgS2abCK0W7BLcasdERERb0DRL1NOAby5ut1Yx3Fcp2Tg1xNM55tpHMBr4P8ELjRiQYvu85lE01JMWMKLXZHgcGugJEWTUrryuCRQxVTghcVQOZC6Ldiy9nbPUAuLO3NGkQT3Rc4BhaSa3DsJyu2bkRSwv+dybPYWfcmlgA7waILqFEhQMXAmR7Pio3f/nozFnfTpL8sKQW5N7eY3S3L/L0dP59p/PhgvmvnYnvlSYYEzXnnsiDNeyKxmvC52evIyG00gn7hqfwEoOx5a+1H5rwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjoxNCswMDowMIhPxvEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MTQrMDA6MDD5En5NAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
+                </span>Инстаграм</a>
+              <a href="#" class="social-btn social-btn--twitter" title="Мы в Твиттере">
+                <span class="social-btn__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="38" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAQAAAACNCElAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIBSURBVEjHrZbbjdswEEXPBvkPS3A6YAdROlAJKsElKBUIqYBIBUoH2lRAd0B3QHcw+SCl5Uv22tAIECCSczWPOzN8Y08UPT/Q6GTtwoV//OXGE3LCIPGxLPGx25rh9DkgFYE8E1212zHhI6B6BNXjERzD3VMDDsHT3zs0IQjj43+iGBGEae+AQfAN1/akwyOYPat8lrvHovEt6/oXoD7gstgpPPKEg7mzgk+jbBDGl6AAxjRyJwT3iQzuicIhK40N8oBXQQZmFkw8OyRhGVbbFIIv1KYqGSopJsHiEJZk3yOogDoVilLldkGwaKDfYH1SoVPwzlR5DPkRPOe4orOofljZZToGLFI4GTbOCILjzImxiOrQKCXBxlchHo9CsyRx6pP9EWEudCzyBapWp1EoFq785Du/eOfGjWtx6k/xfYOvDQqoCKl559ok87eGCdHXpVqr6q12qSL5Etys5Tcw7cKd0Fz2LLON1ZD8uQlmkI00uUaDGgAzgm8WmS67RGqUaTYfHYdGV6gFwtZ2RdLW5RSkj1NorqBazsdyqgv9zMgYCeuzknEIttms/JrfsgWtnHfbnFL0Ebw9LbcWVDfHbisjl01yt0OWrDm22rZmSirTYu6QOGvbBw+UQ0cdHDqE18gddD1YrTvo4hJid9iVKvzzsMtekBevoW93LHz6gvwf8jJEbslfqNoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDI6MDMrMDA6MDCBQvjhAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQyOjAzKzAwOjAw8B9AXQAAAABJRU5ErkJggg==" opacity="0.3"/></svg>
+                </span>Твиттер</a>
             </div>
           </div>
           <div class="column-right">
             <div class="user-block">
-              <a href="#" class="user-block__btn user-block__btn--enter">Войти</a>
-              <a href="#" class="user-block__btn user-block__btn--compare">Сравнить</a>
-              <a href="#" class="user-block__btn user-block__btn--basket">Корзина</a>
+              <a href="#" class="user-block__btn user-block__btn--enter">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
+                </span>
+                Войти</a>
+              <a href="#" class="user-block__btn user-block__btn--compare">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
+                </span>
+                Сравнить</a>
+              <a href="#" class="user-block__btn user-block__btn--basket">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
+                </span>
+                Корзина</a>
             </div>
             <div class="phone-number">
               <a href="tel:+74954959595">+7(495)495-95-95</a>
             </div>
           </div>
-          <div class="copyright"><a href="https://htmlacademy.ru">HTML-Academy</a></div>
+          <div class="copyright">
+            <a href="https://htmlacademy.ru">
+              <img src="img/logo__htmlacademy.svg" width="30" height="36" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </footer>
     </div>
