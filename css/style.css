@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Gilroy Extra Bold'), local('Gilroyextrabold'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: light;
+  src: local('Gilroy Light'), local('Gilroylight'),
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('Open-sans'),
+    url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: light;
+  src: local('Open Sans'), local('Open-sans'),
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -5,10 +41,8 @@ html {
   padding: 0;
 }
 
-
 *, *:before, *:after {
   box-sizing: inherit;
-
 }
 
 body {
@@ -16,7 +50,7 @@ body {
   margin: 0;
   padding: 0;
   font-family:  'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: light;
   line-height: 30px;
   color: #464646;
   font-size: 15px;
@@ -25,7 +59,7 @@ body {
 
 h1, h2 {
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 50px;
   color: #000000;
   font-size: 47px;
@@ -33,7 +67,7 @@ h1, h2 {
 
 h3 {
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 20px;
   color: #000000;
   font-size: 18px;
@@ -61,7 +95,7 @@ h3 {
 
 .btn {
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 20px;
   color: #000000;
   font-size: 18px;
@@ -74,6 +108,7 @@ h3 {
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  cursor: pointer;
 }
 
 .main-container,
@@ -160,6 +195,9 @@ h3 {
 }
 
 .logo {
+  font-family:  'Gilroy', sans-serif;
+  font-weight: bold;
+  line-height: 50px;
   font-size: 48px;
   position: relative;
   text-transform: uppercase;
@@ -175,14 +213,14 @@ h3 {
 .search-form__wrapper {
   margin-bottom: 35px;
     font-size: 15px;
-  font-weight: 300;
+  font-weight: light;
   line-height: 36px;
 }
 
 .btn--search {
   font-size: 15px;
   font-family:  'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: light;
   line-height: 20px;
   padding: 15px 20px;
   text-transform: none;
@@ -194,7 +232,7 @@ h3 {
   margin-bottom: 35px;
   text-align: right;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: light;
   line-height: 36px;
 }
 
@@ -216,7 +254,7 @@ h3 {
   line-height: 30px;
   text-transform: uppercase;
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .main-navigation__item a {
@@ -298,7 +336,7 @@ h3 {
   margin-top: 80px;
   margin-bottom: 25px;
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 56px;
   color: #000000;
   font-size: 47px;
@@ -309,7 +347,7 @@ h3 {
   position: absolute;
   color: #ffffff;
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 180px;
   font-size: 180px;
   right: 0;
@@ -347,7 +385,7 @@ h3 {
   margin-bottom: 15px;
   color: #000000;
   font-family:  'Gilroy', sans-serif;
-  font-weight: 300;
+  font-weight: light;
   line-height: 40px;
   font-size: 36px;
 }
@@ -403,7 +441,7 @@ h3 {
   display: block;
   font-family:  'Gilroy', sans-serif;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 20px;
 }
 
@@ -481,7 +519,7 @@ h3 {
   margin-top: 50px;
   margin-bottom: 40px;
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   line-height: 50px;
   color: #000000;
   font-size: 47px;
@@ -528,7 +566,7 @@ h3 {
 
 .text-block__list-item {
   font-family:  'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -620,7 +658,7 @@ h3 {
   margin: 0;
   font-size: 18px;
   font-family: 'Gilroy', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   text-align: left;
   line-height: 20px;
   padding: 15px 0;
@@ -735,7 +773,7 @@ h3 {
   width: 25%;
   font-size: 16px;
   font-family: 'Gilroy', sans-serif;
-  font-weight: 300;
+  font-weight: light;
   text-align: right;
   line-height: 20px;
 }
@@ -768,7 +806,7 @@ h3 {
   font-size: 16px;
   font-family:  'Gilroy', sans-serif;
   line-height: 20px;
-  font-weight: 900;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 25px 0;
 }
@@ -803,7 +841,7 @@ h3 {
   padding-top: 55px;
   padding-bottom: 60px;
     font-size: 15px;
-  font-weight: 300;
+  font-weight: light;
   line-height: 30px;
 }
 
@@ -835,15 +873,6 @@ h3 {
 .page-footer .main-navigation__item {
   width: 30%;
 }
-
-svg {
-  fill: #fff;
-  stroke: #fff;
-  filter: none;
-  opacity: 1.0;
-}
-
-
 
 
 @media all and (min-width: 1200px) {
