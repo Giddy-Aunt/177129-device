@@ -2,48 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
     <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link  rel="stylesheet" href="css/styl.css">
+    <link  rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-page">
     <div class="main-container">
-      <header class="page-header page-header--main">
+
+
+      <header class="page-header">
+
+
         <div class="logo">
           <a href="index.html"><h1>Device</h1></a>
         </div>
-        <div class="user-block">
-          <div class="user-block__search">
-            <form action="#" class="search-form" method="get">
-              <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
-              <label for="search-field">
+
+
+        <div class="column-wrapper clearfix">
+
+
+          <div class="left-column half-width-column">
+            <div class="search-form__wrapper">
+              <form action="#" class="search-form" method="get">
+                <label for="search-field">
+                  <span class="user-block__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
+                  </span>
+                  <span class="visually-hidden">Поиск по сайту</span>
+                </label>
+                  <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+                  <button class="btn btn--search" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+
+
+          <div class="right-column half-width-column">
+            <div class="user-block">
+              <a href="#" class="user-block__btn user-block__btn--account">
                 <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
-                </span>Поиск по сайту</label>
-            </form>
-          </div>
-          <div class="user-block__btns">
-            <a href="#" class="user-block__btn user-block__btn--account">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
-              </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
+                </span>
               Валентин Петухов
-            </a>
-            <a href="#" class="user-block__btn user-block__btn--exit">
-              <span class="user-block__icon"></span>Выйти</a>
-            <a href="#" class="user-block__btn user-block__btn--compare">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
-              </span>Сравнить</a>
-            <a href="#" class="user-block__btn user-block__btn--basket">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
-              </span>Корзина</a>
+              </a>
+              <a href="#" class="user-block__btn user-block__btn--exit">
+                <span class="user-block__icon"></span>Выйти</a>
+              <a href="#" class="user-block__btn user-block__btn--compare">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
+                </span>Сравнить</a>
+              <a href="#" class="user-block__btn user-block__btn--basket">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
+                </span>Корзина</a>
+            </div>
           </div>
+
+
         </div>
+
+
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--drop-down-control">
+            <li class="main-navigation__item main-navigation__item--drop-down-control main-navigation__item--catalog-link">
               <a href="catalog.html">Каталог товаров</a>
               <ul class="main-navigation__drop-down-list">
                 <li class="main-navigation__drop-down-item"><a href="#">Виртуальная реальность</a></li>
@@ -59,26 +81,33 @@
             <li class="main-navigation__item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
+
+
       </header>
 
-
       <main class="content">
-      <h2 class="page-title">Моноподы для селфи</h2>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-          <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs-item">Моноподы для селфи</li>
-        </ul>
+
+      <div class="page-navigation">
+        <h2 class="page-title">Моноподы для селфи</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+            <li class="breadcrumbs-item">Моноподы для селфи</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="catalog-wrapper">
-        <div class="left-column">
+
+      <div class="catalog-wrapper clearfix">
+        <div class="left-column narrow-column">
           <section class="filter">
-            <h2 class="subsection-title">Фильтр:</h2>
-            <form action="#" method="get">
-              <fieldset>
-                <legend class="filter__option">Стоимость</legend>
+            <div class="filter__title-wrapper">
+              <h2 class="catalog-title">Фильтр:</h2>
+            </div>
+            <form class="filter__form" action="#" method="get">
+              <fieldset class="filter__option">
+                <legend class="filter__option-title">Стоимость</legend>
                 <div class="range">
                   <div class="range__controls">
                     <div class="range__scale">
@@ -93,34 +122,34 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset>
-                <legend class="filter__option">Цвет</legend>
+              <fieldset class="filter__option">
+                <legend class="filter__option-title">Цвет</legend>
                 <input type="checkbox" name="color" value="black" id="color-black" checked>
-                <label for="color-black"></label>
+                <label for="color-black">Черный</label>
                 <input type="checkbox" name="color" value="white" id="color-white">
-                <label for="color-white"></label>
+                <label for="color-white">Белый</label>
                 <input type="checkbox" name="color" value="blue" id="color-blue" checked>
-                <label for="color-blue"></label>
+                <label for="color-blue">Синий</label>
                 <input type="checkbox" name="color" value="red" id="color-red" checked>
-                <label for="color-red"></label>
+                <label for="color-red">Красный</label>
                 <input type="checkbox" name="color" value="pink" id="color-pink">
-                <label for="color-pink"></label>
+                <label for="color-pink">Розовый</label>
               </fieldset>
-              <fieldset>
-                <legend class="filter__option">Bluetooth</legend>
+              <fieldset class="filter__option">
+                <legend class="filter__option-title">Bluetooth</legend>
                 <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-                <label for="bluetooth-yes"></label>
+                <label for="bluetooth-yes">Есть</label>
                 <input type="radio" name="bluetooth" value="no" id="bluetooth-no">
-                <label for="bluetooth-yes"></label>
+                <label for="bluetooth-yes">Нет</label>
               </fieldset>
               <button type="submit" class="btn">Показать</button>
             </form>
 
           </section>
         </div>
-        <div class="right-column">
-          <section class="sorting">
-            <h2 class="subsection-title">Сортировка:</h2>
+        <div class="right-column wide-column">
+          <section class="sorting clearfix">
+            <h2 class="catalog-title catalog-title--sorting">Сортировка:</h2>
             <ul class="sorting__options-list">
               <li class="sorting__option sorting__option--active"><a href="#">По цене</a></li>
               <li class="sorting__option"><a href="#">По типу</a></li>
@@ -131,11 +160,11 @@
               <a class="sorting__direction-btn sorting__direction-btn--down sorting__direction-btn--active" href="#" >По убыванию</a>
             </div>
           </section>
-          <div class="catalog__goods">
+          <div class="product-cards-wrapper">
             <article class="product-card">
               <a href="#">
                 <img src="img/photo__catalog__item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <div class="product-card__text">
+                <div class="product-card__text-wrapper clearfix">
                   <h3 class="product-card__title">Любительская селфи-палка</h3>
                   <span class="product-card__price">500 руб.</span>
                 </div>
@@ -148,7 +177,7 @@
             <article class="product-card">
               <a href="#">
                 <img src="img/photo__catalog__item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                <div class="product-card__text">
+                <div class="product-card__text-wrapper clearfix">
                   <h3 class="product-card__title">Профессиональная селфи-палка</h3>
                   <span class="product-card__price">1500 руб.</span>
                 </div>
@@ -161,7 +190,7 @@
             <article class="product-card">
               <a href="#">
                 <img src="img/photo__catalog__item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <div class="product-card__text">
+                <div class="product-card__text-wrapper clearfix">
                   <h3 class="product-card__title">Непотопляемая селфи-палка</h3>
                   <span class="product-card__price">2500 руб.</span>
                 </div>
@@ -174,7 +203,7 @@
             <article class="product-card product-card--new">
               <a href="#">
                 <img src="img/photo__catalog__item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
-                <div class="product-card__text">
+                <div class="product-card__text-wrapper clearfix">
                   <h3 class="product-card__title">Селфи-палка &laquo;Следуй за мной&raquo;</h3>
                   <span class="product-card__price">4900 руб.</span>
                 </div>
@@ -187,27 +216,29 @@
           </div>
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pagination__item"><a href="#">Назад</a></li>
+              <li class="pagination__item pagination__item--previous"><a href="#">Назад</a></li>
               <li class="pagination__item pagination__item--active"><a href="#">1</a></li>
               <li class="pagination__item"><a href="#">2</a></li>
               <li class="pagination__item"><a href="#">3</a></li>
-              <li class="pagination__item"><a href="#">Вперед</a></li>
+              <li class="pagination__item pagination__item--next"><a href="#">Вперед</a></li>
             </ul>
           </div>
         </div>
       </div>
-      </main>
+    </main>
+  </div>
 
 
-      <footer class="page-footer">
-        <div class="column-wrapper">
-          <div class="column-left">
+    <footer class="page-footer">
+      <div class="container">
+        <div class="column-wrapper clearfix">
+          <div class="left-column narrow-column">
             <div class="logo"><a href="">Device</a></div>
             <div class="adress">г. Москва, ул. Строителей, 15</div>
           </div>
-          <div class="column-middle">
+          <div class="middle-column">
             <div class="main-navigation">
-              <ul class="main-navigation list">
+              <ul class="main-navigation_list">
                 <li class="main-navigation__item"><a href="#">Доставка</a></li>
                 <li class="main-navigation__item"><a href="#">Гарантия</a></li>
                 <li class="main-navigation__item"><a href="#">Контакты</a></li>
@@ -217,29 +248,31 @@
               <a href="#" class="social-btn social-btn--facebook" title="Мы в Фейсбуке">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAHNSURBVEjHrZbheYIwEIZfeRwgIzACnUCcQDpBWaEbuAHdADeoToCdADagG4QNrj8SBSEJSvn44WO4fLn7LtzdBh8UGTsSksFaQ8MPZzpeQkyJ2Kemsk99XyuJn6VSlkpTkE7ephRoS6nmyTI0QksetMppETRZmKxAEIonzlUcra0XJYJ2BOhDikYo/Z7phzzOI0G7PcwWkPWEdw03VokWxZ6rZ1M8uH8nfkchV3S8DVfLgKgJ1f2+CUI7sTg+KhgjtJ5sxmiEmiMpKSk1MrFRtEgvVIl471k5yl3loIO8t1JotFfq8Ts3HWjExJf77w4gVHcPWqueC4WJMGIHXJwmGd+Dfx/2sz87bS/ADnCK2wfQe3fLr08YoR78BAOd1866FcFLxTDxWncA2+BmRUpHY4kUoLxfjrFxhhTSzncLKoQkCpz1PsnilS8+AzuaLXiL5ZXrSPh9UBggollQlty6NYaOuZr/BFIwdBfg8G+6A/BjYg6VgMfM+mFLQETHGTXTCOeQozjdLniofAp1oHAajMpnqLjrQVn3STIo7nOtJx7IMG46Bo7Ws1pjfHR5tbZ9U3C1oQJWHnmMhisOZObcFcdFg8XD7Cbg5YJR+w/HrwSO80hOmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjowNSswMDowMOKSzdsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MDUrMDA6MDCTz3VnAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>Фейсбук</a>
+                </span><span class="visually-hidden">Фейсбук</span></a>
               <a href="#" class="social-btn social-btn--instagram" title="Мы в Инстаграме">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIkSURBVEjHtZbhlaIwFEYvcyiADiYlZCowW8HawWY60ArUCpitADrQqUCsALYC3Aqgg8yPBIxI0HHZj3PEkOQm7+XlJRFhSZYskCT9l5aKEwcqvilNjcFgaDj2T+O+1ejHUUuHOqIRgzqB5uiQy/uohD0GQ3YDuoZmGAx7zxGj3qoxlKgHbFCUGGpkGNZgyKZHvLIkw9CMA4WDfU8WOOKY8glYByy7QuTeWzYU/PAMkRMeLKho+9IRxY6tb6ih8Xym+wgLPY0XeQkNxhocA7ABdv14SzIg529wdq9oMloOALTsSNnwfplb7TWuMcGoT1AoBHqkj1uQFMPqyvCSkFYufGF/AbjvKbwASyD3cPAZxCX97x/X1iq3nBiBoPDWaUwCwZkzkLMAft+0aClQiBgJnCZQktSFTMGayguma51QSIurBlW/WHi4hIpPfqI4ei3FoE8FyNhN9da4i97JgS2abCK0W7BLcasdERERb0DRL1NOAby5ut1Yx3Fcp2Tg1xNM55tpHMBr4P8ELjRiQYvu85lE01JMWMKLXZHgcGugJEWTUrryuCRQxVTghcVQOZC6Ldiy9nbPUAuLO3NGkQT3Rc4BhaSa3DsJyu2bkRSwv+dybPYWfcmlgA7waILqFEhQMXAmR7Pio3f/nozFnfTpL8sKQW5N7eY3S3L/L0dP59p/PhgvmvnYnvlSYYEzXnnsiDNeyKxmvC52evIyG00gn7hqfwEoOx5a+1H5rwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjoxNCswMDowMIhPxvEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MTQrMDA6MDD5En5NAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>Инстаграм</a>
+                </span>
+                <span class="visually-hidden">Инстаграм</span></a>
               <a href="#" class="social-btn social-btn--twitter" title="Мы в Твиттере">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="38" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAQAAAACNCElAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIBSURBVEjHrZbbjdswEEXPBvkPS3A6YAdROlAJKsElKBUIqYBIBUoH2lRAd0B3QHcw+SCl5Uv22tAIECCSczWPOzN8Y08UPT/Q6GTtwoV//OXGE3LCIPGxLPGx25rh9DkgFYE8E1212zHhI6B6BNXjERzD3VMDDsHT3zs0IQjj43+iGBGEae+AQfAN1/akwyOYPat8lrvHovEt6/oXoD7gstgpPPKEg7mzgk+jbBDGl6AAxjRyJwT3iQzuicIhK40N8oBXQQZmFkw8OyRhGVbbFIIv1KYqGSopJsHiEJZk3yOogDoVilLldkGwaKDfYH1SoVPwzlR5DPkRPOe4orOofljZZToGLFI4GTbOCILjzImxiOrQKCXBxlchHo9CsyRx6pP9EWEudCzyBapWp1EoFq785Du/eOfGjWtx6k/xfYOvDQqoCKl559ok87eGCdHXpVqr6q12qSL5Etys5Tcw7cKd0Fz2LLON1ZD8uQlmkI00uUaDGgAzgm8WmS67RGqUaTYfHYdGV6gFwtZ2RdLW5RSkj1NorqBazsdyqgv9zMgYCeuzknEIttms/JrfsgWtnHfbnFL0Ebw9LbcWVDfHbisjl01yt0OWrDm22rZmSirTYu6QOGvbBw+UQ0cdHDqE18gddD1YrTvo4hJid9iVKvzzsMtekBevoW93LHz6gvwf8jJEbslfqNoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDI6MDMrMDA6MDCBQvjhAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQyOjAzKzAwOjAw8B9AXQAAAABJRU5ErkJggg==" opacity="0.3"/></svg>
-                </span>Твиттер</a>
+                </span>
+                <span class="visually-hidden">Твиттер</span></a>
             </div>
           </div>
-          <div class="column-right">
+          <div class="right-column narrow-column">
             <div class="user-block">
               <a href="#" class="user-block__btn user-block__btn--enter">
                 <span class="user-block__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
                 </span>
-                Войти
-              </a>
+                Войти</a>
               <a href="#" class="user-block__btn user-block__btn--compare">
-                <span class="user-block__icon"></span>
-                Сравнить
-              </a>
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
+                </span>
+                Сравнить</a>
               <a href="#" class="user-block__btn user-block__btn--basket">
                 <span class="user-block__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
@@ -247,12 +280,16 @@
                 Корзина</a>
             </div>
             <div class="phone-number">
-              <a href="tel:+74954959595">+7(495)495-95-95</a>
+              <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
             </div>
-          </div>
-          <div class="copyright"><a href="https://htmlacademy.ru">HTML-Academy</a></div>
+            <div class="copyright">
+              <a href="https://htmlacademy.ru">
+                <img src="img/logo__htmlacademy.svg" width="30" height="36" alt="HTML Academy" title=""HTML Academy">
+              </a>
+            </div>
         </div>
-      </footer>
-    </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

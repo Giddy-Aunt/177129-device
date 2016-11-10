@@ -2,52 +2,64 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=1200">
     <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link  rel="stylesheet" href="css/styl.css">
+    <link  rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body  class="main-page">
     <div class="main-container">
       <header class="page-header page-header--main">
         <div class="logo">
           <a href=""><h1>Device</h1></a>
         </div>
-        <div class="user-block">
-          <div class="user-block__search">
-            <form action="#" class="search-form" method="get">
-              <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
-              <label for="search-field">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
-                </span>
-                Поиск по сайту
-              </label>
-            </form>
+
+
+        <div class="column-wrapper clearfix">
+
+
+          <div class="left-column half-width-column">
+            <div class="search-form__wrapper">
+              <form action="#" class="search-form" method="get">
+                <label for="search-field">
+                  <span class="user-block__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
+                  </span>
+                  <span class="visually-hidden">Поиск по сайту</span>
+                </label>
+                  <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+                  <button class="btn btn--search" type="submit">Найти</button>
+              </form>
+            </div>
           </div>
-          <div class="user-block__btns">
+
+
+          <div class="right-column half-width-column">
+            <div class="user-block">
             <a href="#" class="user-block__btn user-block__btn--enter">
               <span class="user-block__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
               </span>
               Войти
             </a>
-            <a href="#" class="user-block__btn user-block__btn--compare">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
-              </span>
-              Сравнить
-            </a>
-            <a href="#" class="user-block__btn user-block__btn--basket">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
-              </span>
-              Корзина
-            </a>
+              <a href="#" class="user-block__btn user-block__btn--compare">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
+                </span>Сравнить</a>
+              <a href="#" class="user-block__btn user-block__btn--basket">
+                <span class="user-block__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
+                </span>Корзина</a>
+            </div>
           </div>
+
+
         </div>
+
+
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--drop-down-control">
+            <li class="main-navigation__item main-navigation__item--drop-down-control main-navigation__item--catalog-link">
               <a href="catalog.html">Каталог товаров</a>
               <ul class="main-navigation__drop-down-list">
                 <li class="main-navigation__drop-down-item"><a href="#">Виртуальная реальность</a></li>
@@ -63,19 +75,22 @@
             <li class="main-navigation__item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-      </header>
 
+
+      </header>
 
       <main class="content">
         <section class="slider">
-          <h2 class="vusually-hidden">Лучшие товары</h2>
+          <h2 class="visually-hidden">Лучшие товары</h2>
           <div class="slider__wpapper">
             <div class="slider__slides">
-              <div class="slider__slide slider__slide--1">
-                <div class="slider__picture"><img src="img/photo__slider-1.png" alt="Палка для селфи" width="384" height="486"></div>
-                <div class="slider__text">
+              <div class="slider__slide-wrapper clearfix">
+                <div class="slider__picture-wrapper left-column half-width-column">
+                  <img class="slider__picture" src="img/photo__slider-1.png" alt="Палка для селфи" width="384" height="486">
+                </div>
+                <div class="slider__text-wrapper right-column half-width-column">
                   <div class="slider__slide-number">01</div>
-                  <b class="slider__slogan">Делай селфи, как Бен Стиллер!</b>
+                  <b class="slider__slogan">Делай селфи,<br>как Бен Стиллер!</b>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <a href="" class="btn">Подробнее</a>
                   <ul class="slider__product-parameters">
@@ -94,9 +109,11 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__slide slider__slide--2">
-                <div class="slider__picture"><img src="img/photo__slider-2.png" alt="Фитнесс-браслет" width="345" height="485"></div>
-                <div class="slider__text">
+              <div class="slider__slide-wrapper clearfix">
+                <div class="slider__picture-wrapper left-column half-width-column">
+                  <img class="slider__picture" src="img/photo__slider-2.png" alt="Фитнесс-браслет" width="345" height="485">
+                </div>
+                <div class="slider__text-wrapper right-column half-width-column">
                   <div class="slider__slide-number">02</div>
                   <b class="slider__slogan">Худеем правильно!</b>
                   <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -109,9 +126,11 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__slide slider__slide--3">
-                <div class="slider__picture"><img src="img/photo__slider-3.png" alt="Квадрокоптер" width="526" height="334"></div>
-                <div class="slider__text">
+              <div class="slider__slide-wrapper clearfix">
+                <div class="slider__picture-wrapper left-column half-width-column">
+                  <img class="slider__picture" src="img/photo__slider-3.png" alt="Квадрокоптер" width="526" height="334">
+                </div>
+                <div class="slider__text-wrapper right-column half-width-column">
                   <div class="slider__slide-number">03</div>
                   <b class="slider__slogan">Порхает как бабочка, жалит как пчела!</b>
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -130,9 +149,9 @@
               </div>
             </div>
             <div class="slider__controls">
-              <input type="radio" name="slider-control" id="slider-control-1" checked>
-              <input type="radio" name="slider-control" id="slider-control-2">
-              <input type="radio" name="slider-control" id="slider-control-3">
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-1" checked>
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-2">
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-3">
               <label class="slider__control" for="slider-control-1"></label>
               <label class="slider__control" for="slider-control-2"></label>
               <label class="slider__control" for="slider-control-3"></label>
@@ -144,58 +163,50 @@
           <h2 class="visually-hidden">Популярные товары в каталоге</h2>
           <ul class="popular-goods__list">
             <li class="popular-goods__item">
-              <a href="#">Виртуальная реальность</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Виртуальная реальность</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#">Моноподы для селфи</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Моноподы для селфи</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#">Экшн-камеры</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Экшн-камеры</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#">Фитнесс-браслеты</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Фитнесс-браслеты</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#">Умные часы</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Умные часы</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#">Квадрокоптеры</a>
+              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Квадрокоптеры</span></a>
             </li>
           </ul>
         </section>
 
         <section class="services">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
-          <div class="tab-control-radios">
-            <input type="radio" name="tab-control" id="tab-control-1">
-            <input type="radio" name="tab-control" id="tab-control-2">
-            <input type="radio" name="tab-control" id="tab-control-3">
-          </div>
-          <div class="services__item">
-            <div class="services__tab-control">
-              <label for="tab-control-1">Доставка</label>
+          <input class="radio-control" type="radio" name="tab-control" id="tab-control-1">
+          <input class="radio-control" type="radio" name="tab-control" id="tab-control-2">
+          <input class="radio-control" type="radio" name="tab-control" id="tab-control-3">
+          <div class="services__wrapper clearfix">
+            <div class="services__tab-controls  left-column">
+              <label  class="services__tab-control btn" for="tab-control-1">Доставка</label>
+              <label  class="services__tab-control btn" for="tab-control-2">Гарантия</label>
+              <label  class="services__tab-control btn" for="tab-control-3">Кредит</label>
             </div>
-            <div class="services__tab-content">
-              <h3 class="services__name">Доставка</h3>
-              <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <div class="services__tab-control">
-              <label for="tab-control-2">Гарантия</label>
-            </div>
-            <div class="services__tab-content">
-              <h3 class="services__name">Гарантия</h3>
-              <p class="services__text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <div class="services__tab-control">
-              <label for="tab-control-3">Кредит</label>
-            </div>
-            <div class="services__tab-content">
-              <h3 class="services__name">Кредит</h3>
-              <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <div class="services__tab-content  right-column">
+              <div class="text-block">
+                <h3 class="text-block__title">Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
+              <div class="text-block">
+                <h3 class="text-block__title">Гарантия</h3>
+                <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </div>
+              <div class="text-block">
+                <h3 class="text-block__title">Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -204,37 +215,37 @@
           <h2 class="visually-hidden">Популярные производители</h2>
           <ul class="brands__list">
             <li class="brand-logo">
-              <a href="#"><img src="img/logo__brand-1.jpg" width="260" height="100" alt="DJI"></a>
+              <a href="#"><img src="img/logo__brand-1.jpg" width="260" height="100" alt="DJI" title="DJI"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="img/logo__brand-2.jpg" width="260" height="100" alt="SP Gadgets"></a>
+              <a href="#"><img src="img/logo__brand-2.jpg" width="260" height="100" alt="SP Gadgets" title="SP Gadgets"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="img/logo__brand-3.jpg" width="260" height="100" alt="GoPro"></a>
+              <a href="#"><img src="img/logo__brand-3.jpg" width="260" height="100" alt="GoPro" title="GoPro"></a>
             </li>
             <li class="brand-logo">
-              <a href="#"><img src="img/logo__brand-4.jpg" width="260" height="100" alt="Vive"></a>
+              <a href="#"><img src="img/logo__brand-4.jpg" width="260" height="100" alt="Vive" title="Vive"></a>
             </li>
            </ul>
         </section>
 
-        <div class="columns-wrapper">
-          <div class="left-column">
-            <section class="about-us">
-              <h2 class="section-title">О нас</h2>
+        <div class="column-wrapper clearfix">
+          <div class="left-column half-width-column">
+            <section class="text-block text-block--about-us">
+              <h2 class="text-block__title">О нас</h2>
               <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
               <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-              <ul class="list">
-                <li class="list-item">Деловые линии</li>
-                <li class="list-item">Автотрейдинг</li>
-                <li class="list-item">ЖелДорЭкспедиция</li>
+              <ul class="text-block__list">
+                <li class="text-block__list-item">Деловые линии</li>
+                <li class="text-block__list-item">Автотрейдинг</li>
+                <li class="text-block__list-item">ЖелДорЭкспедиция</li>
               </ul>
               <a href="#" class="btn">Подробнее о нас</a>
             </section>
           </div>
-          <div class="right-column">
-            <section class="contacts">
-              <h2 class="section-title">Контакты</h2>
+          <div class="right-column half-width-column">
+            <section class="text-block  text-block--contacts">
+              <h2 class="text-block__title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <div class="map" id="map"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></div>
               <a href="#" class="btn">Напишите нам</a>
@@ -242,15 +253,20 @@
           </div>
         </div>
       </main>
-      <footer class="page-footer">
-        <div class="column-wrapper">
-          <div class="column-left">
+    </div>
+
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="column-wrapper clearfix">
+          <div class="left-column narrow-column">
             <div class="logo"><a href="">Device</a></div>
             <div class="adress">г. Москва, ул. Строителей, 15</div>
           </div>
-          <div class="column-middle">
+          <div class="middle-column">
             <div class="main-navigation">
-              <ul class="main-navigation list">
+              <ul class="main-navigation_list">
                 <li class="main-navigation__item"><a href="#">Доставка</a></li>
                 <li class="main-navigation__item"><a href="#">Гарантия</a></li>
                 <li class="main-navigation__item"><a href="#">Контакты</a></li>
@@ -260,18 +276,22 @@
               <a href="#" class="social-btn social-btn--facebook" title="Мы в Фейсбуке">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAHNSURBVEjHrZbheYIwEIZfeRwgIzACnUCcQDpBWaEbuAHdADeoToCdADagG4QNrj8SBSEJSvn44WO4fLn7LtzdBh8UGTsSksFaQ8MPZzpeQkyJ2Kemsk99XyuJn6VSlkpTkE7ephRoS6nmyTI0QksetMppETRZmKxAEIonzlUcra0XJYJ2BOhDikYo/Z7phzzOI0G7PcwWkPWEdw03VokWxZ6rZ1M8uH8nfkchV3S8DVfLgKgJ1f2+CUI7sTg+KhgjtJ5sxmiEmiMpKSk1MrFRtEgvVIl471k5yl3loIO8t1JotFfq8Ts3HWjExJf77w4gVHcPWqueC4WJMGIHXJwmGd+Dfx/2sz87bS/ADnCK2wfQe3fLr08YoR78BAOd1866FcFLxTDxWncA2+BmRUpHY4kUoLxfjrFxhhTSzncLKoQkCpz1PsnilS8+AzuaLXiL5ZXrSPh9UBggollQlty6NYaOuZr/BFIwdBfg8G+6A/BjYg6VgMfM+mFLQETHGTXTCOeQozjdLniofAp1oHAajMpnqLjrQVn3STIo7nOtJx7IMG46Bo7Ws1pjfHR5tbZ9U3C1oQJWHnmMhisOZObcFcdFg8XD7Cbg5YJR+w/HrwSO80hOmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjowNSswMDowMOKSzdsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MDUrMDA6MDCTz3VnAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>Фейсбук</a>
+                </span>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
               <a href="#" class="social-btn social-btn--instagram" title="Мы в Инстаграме">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIkSURBVEjHtZbhlaIwFEYvcyiADiYlZCowW8HawWY60ArUCpitADrQqUCsALYC3Aqgg8yPBIxI0HHZj3PEkOQm7+XlJRFhSZYskCT9l5aKEwcqvilNjcFgaDj2T+O+1ejHUUuHOqIRgzqB5uiQy/uohD0GQ3YDuoZmGAx7zxGj3qoxlKgHbFCUGGpkGNZgyKZHvLIkw9CMA4WDfU8WOOKY8glYByy7QuTeWzYU/PAMkRMeLKho+9IRxY6tb6ih8Xym+wgLPY0XeQkNxhocA7ABdv14SzIg529wdq9oMloOALTsSNnwfplb7TWuMcGoT1AoBHqkj1uQFMPqyvCSkFYufGF/AbjvKbwASyD3cPAZxCX97x/X1iq3nBiBoPDWaUwCwZkzkLMAft+0aClQiBgJnCZQktSFTMGayguma51QSIurBlW/WHi4hIpPfqI4ei3FoE8FyNhN9da4i97JgS2abCK0W7BLcasdERERb0DRL1NOAby5ut1Yx3Fcp2Tg1xNM55tpHMBr4P8ELjRiQYvu85lE01JMWMKLXZHgcGugJEWTUrryuCRQxVTghcVQOZC6Ldiy9nbPUAuLO3NGkQT3Rc4BhaSa3DsJyu2bkRSwv+dybPYWfcmlgA7waILqFEhQMXAmR7Pio3f/nozFnfTpL8sKQW5N7eY3S3L/L0dP59p/PhgvmvnYnvlSYYEzXnnsiDNeyKxmvC52evIyG00gn7hqfwEoOx5a+1H5rwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjoxNCswMDowMIhPxvEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MTQrMDA6MDD5En5NAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>Инстаграм</a>
+                </span>
+                <span class="visually-hidden">Инстаграм</span></a>
               <a href="#" class="social-btn social-btn--twitter" title="Мы в Твиттере">
                 <span class="social-btn__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="38" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAQAAAACNCElAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIBSURBVEjHrZbbjdswEEXPBvkPS3A6YAdROlAJKsElKBUIqYBIBUoH2lRAd0B3QHcw+SCl5Uv22tAIECCSczWPOzN8Y08UPT/Q6GTtwoV//OXGE3LCIPGxLPGx25rh9DkgFYE8E1212zHhI6B6BNXjERzD3VMDDsHT3zs0IQjj43+iGBGEae+AQfAN1/akwyOYPat8lrvHovEt6/oXoD7gstgpPPKEg7mzgk+jbBDGl6AAxjRyJwT3iQzuicIhK40N8oBXQQZmFkw8OyRhGVbbFIIv1KYqGSopJsHiEJZk3yOogDoVilLldkGwaKDfYH1SoVPwzlR5DPkRPOe4orOofljZZToGLFI4GTbOCILjzImxiOrQKCXBxlchHo9CsyRx6pP9EWEudCzyBapWp1EoFq785Du/eOfGjWtx6k/xfYOvDQqoCKl559ok87eGCdHXpVqr6q12qSL5Etys5Tcw7cKd0Fz2LLON1ZD8uQlmkI00uUaDGgAzgm8WmS67RGqUaTYfHYdGV6gFwtZ2RdLW5RSkj1NorqBazsdyqgv9zMgYCeuzknEIttms/JrfsgWtnHfbnFL0Ebw9LbcWVDfHbisjl01yt0OWrDm22rZmSirTYu6QOGvbBw+UQ0cdHDqE18gddD1YrTvo4hJid9iVKvzzsMtekBevoW93LHz6gvwf8jJEbslfqNoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDI6MDMrMDA6MDCBQvjhAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQyOjAzKzAwOjAw8B9AXQAAAABJRU5ErkJggg==" opacity="0.3"/></svg>
-                </span>Твиттер</a>
+                </span>
+                <span class="visually-hidden">Твиттер</span></a>
             </div>
           </div>
-          <div class="column-right">
+          <div class="right-column narrow-column">
             <div class="user-block">
               <a href="#" class="user-block__btn user-block__btn--enter">
                 <span class="user-block__icon">
@@ -290,33 +310,33 @@
                 Корзина</a>
             </div>
             <div class="phone-number">
-              <a href="tel:+74954959595">+7(495)495-95-95</a>
+              <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
             </div>
-          </div>
-          <div class="copyright">
-            <a href="https://htmlacademy.ru">
-              <img src="img/logo__htmlacademy.svg" width="30" height="36" alt="HTML Academy">
-            </a>
-          </div>
+            <div class="copyright">
+              <a href="https://htmlacademy.ru">
+                <img src="img/logo__htmlacademy.svg" width="30" height="36" alt="HTML Academy" title=""HTML Academy">
+              </a>
+            </div>
         </div>
-      </footer>
-    </div>
+        </div>
+      </div>
+    </footer>
 
 
-    <div class="visually-hidden popup popup-map">
+    <div class="hidden popup popup-map">
       <div class="map"></div>
       <button class="close-btn" type="button">Закрыть</button>
     </div>
 
 
-    <div class="visually-hidden popup popup-feedback">
+    <div class="hidden popup popup-feedback">
       <form class="feedback-form" action="#" method="get">
-      <div class="column-wrapper">
-      <fieldset class="left-column">
+      <div class="column-wrapper clearfix">
+      <fieldset class="left-column half-width-column">
       <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
       <input class="feedback-form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
       </fieldset>
-      <fieldset class="right-column">
+      <fieldset class="right-column half-width-colum">
       <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
       <input class="feedback-form__input" type="email" name="feedback-email" id="feedback-email"  placeholder="Для отправки ответа" required>
       </fieldset>
