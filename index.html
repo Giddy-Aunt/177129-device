@@ -11,7 +11,7 @@
     <div class="main-container">
       <header class="page-header page-header--main">
         <div class="logo">
-          <a href=""><h1>Device</h1></a>
+          <a href="#"><h1>Device</h1></a>
         </div>
 
 
@@ -21,13 +21,10 @@
           <div class="left-column half-width-column">
             <div class="search-form__wrapper">
               <form action="#" class="search-form" method="get">
-                <label for="search-field">
-                  <span class="user-block__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACESURBVCjPhZFREcAgDEPfoQAJkzAJSMHRJCABScwBErIPBsfKbUu/mubatIWGQEZ3ZAIGaRR7HHP5QIhCJBCIFIRIjOaPdOp4D8qIYkZ6CiK3RIhoTRERAnAAnItgMI4fNMG28BPTTPp3k+ua/rlm39oeqrLbW85RrcQ+a18lFl3Ct6ReCCBWUZxZgbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDM6MjMrMDA6MDAspZSiAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQzOjIzKzAwOjAwXfgsHgAAAABJRU5ErkJggg=="/></svg>
-                  </span>
+                <label class="search-form__label" for="search-field">
                   <span class="visually-hidden">Поиск по сайту</span>
                 </label>
-                  <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+                  <input class="search-form__input" type="search" id="search-field" name="search" placeholder="Поиск по сайту" required>
                   <button class="btn btn--search" type="submit">Найти</button>
               </form>
             </div>
@@ -35,32 +32,27 @@
 
 
           <div class="right-column half-width-column">
-            <div class="user-block">
-            <a href="#" class="user-block__btn user-block__btn--enter">
-              <span class="user-block__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
-              </span>
-              Войти
-            </a>
-              <a href="#" class="user-block__btn user-block__btn--compare">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
-                </span>Сравнить</a>
-              <a href="#" class="user-block__btn user-block__btn--basket">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
-                </span>Корзина</a>
+            <div class="user-block user-block--page-header">
+              <ul class="user-block__list">
+                <li class="user-block__account-btns">
+                  <a href="#" class="user-block__btn user-block__btn--enter">Войти</a>
+                </li>
+                <li>
+                  <a href="#" class="user-block__btn user-block__btn--compare">Сравнить</a>
+                </li>
+                <li>
+                  <a href="#" class="user-block__btn user-block__btn--cart">Корзина</a>
+                </li>
+              </ul>
             </div>
           </div>
-
-
         </div>
 
 
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--drop-down-control main-navigation__item--catalog-link">
-              <a href="catalog.html">Каталог товаров</a>
+            <li class="main-navigation__item  main-navigation__item--catalog-link">
+              <a  class="main-navigation__link main-navigation__link--drop-down-control"  href="catalog.html">Каталог товаров</a>
               <ul class="main-navigation__drop-down-list">
                 <li class="main-navigation__drop-down-item"><a href="#">Виртуальная реальность</a></li>
                 <li class="main-navigation__drop-down-item"><a href="#">Фитнесс-браслеты</a></li>
@@ -70,9 +62,9 @@
                 <li class="main-navigation__drop-down-item"><a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
-            <li class="main-navigation__item"><a href="#">Доставка</a></li>
-            <li class="main-navigation__item"><a href="#">Гарантия</a></li>
-            <li class="main-navigation__item"><a href="#">Контакты</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="#">Доставка</a></li>
+            <li class="main-navigation__item"><a a class="main-navigation__link" href="#">Гарантия</a></li>
+            <li class="main-navigation__item"><aa class="main-navigation__link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
@@ -91,7 +83,7 @@
                 <div class="slider__text-wrapper right-column half-width-column">
                   <div class="slider__slide-number">01</div>
                   <b class="slider__slogan">Делай селфи,<br>как Бен Стиллер!</b>
-                  <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <a href="" class="btn">Подробнее</a>
                   <ul class="slider__product-parameters">
                     <li class="slider__product-parameter-item">
@@ -163,22 +155,22 @@
           <h2 class="visually-hidden">Популярные товары в каталоге</h2>
           <ul class="popular-goods__list">
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Виртуальная реальность</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--vr"></span><span class="popular-goods__name">Виртуальная реальность</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Моноподы для селфи</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--monopods"></span><span class="popular-goods__name">Моноподы для селфи</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Экшн-камеры</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--actioncams"></span><span class="popular-goods__name">Экшн-камеры</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Фитнесс-браслеты</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--fitness"></span><span class="popular-goods__name">Фитнесс-браслеты</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Умные часы</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--smartwatch"></span><span class="popular-goods__name">Умные часы</span></a>
             </li>
             <li class="popular-goods__item">
-              <a href="#"><span class="popular-goods__icon"></span><span class="popular-goods__name">Квадрокоптеры</span></a>
+              <a href="#"><span class="popular-goods__icon  popular-goods__icon--drones"></span><span class="popular-goods__name">Квадрокоптеры</span></a>
             </li>
           </ul>
         </section>
@@ -267,54 +259,43 @@
           <div class="middle-column">
             <div class="main-navigation">
               <ul class="main-navigation_list">
-                <li class="main-navigation__item"><a href="#">Доставка</a></li>
-                <li class="main-navigation__item"><a href="#">Гарантия</a></li>
-                <li class="main-navigation__item"><a href="#">Контакты</a></li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Доставка</a></li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гарантия</a></li>
+                <li class="main-navigation__item"><a class="main-navigation__link" href="#">Контакты</a></li>
               </ul>
             </div>
-            <div class="social">
+            <div class="social-block">
               <a href="#" class="social-btn social-btn--facebook" title="Мы в Фейсбуке">
-                <span class="social-btn__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAHNSURBVEjHrZbheYIwEIZfeRwgIzACnUCcQDpBWaEbuAHdADeoToCdADagG4QNrj8SBSEJSvn44WO4fLn7LtzdBh8UGTsSksFaQ8MPZzpeQkyJ2Kemsk99XyuJn6VSlkpTkE7ephRoS6nmyTI0QksetMppETRZmKxAEIonzlUcra0XJYJ2BOhDikYo/Z7phzzOI0G7PcwWkPWEdw03VokWxZ6rZ1M8uH8nfkchV3S8DVfLgKgJ1f2+CUI7sTg+KhgjtJ5sxmiEmiMpKSk1MrFRtEgvVIl471k5yl3loIO8t1JotFfq8Ts3HWjExJf77w4gVHcPWqueC4WJMGIHXJwmGd+Dfx/2sz87bS/ADnCK2wfQe3fLr08YoR78BAOd1866FcFLxTDxWncA2+BmRUpHY4kUoLxfjrFxhhTSzncLKoQkCpz1PsnilS8+AzuaLXiL5ZXrSPh9UBggollQlty6NYaOuZr/BFIwdBfg8G+6A/BjYg6VgMfM+mFLQETHGTXTCOeQozjdLniofAp1oHAajMpnqLjrQVn3STIo7nOtJx7IMG46Bo7Ws1pjfHR5tbZ9U3C1oQJWHnmMhisOZObcFcdFg8XD7Cbg5YJR+w/HrwSO80hOmgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjowNSswMDowMOKSzdsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MDUrMDA6MDCTz3VnAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>
                 <span class="visually-hidden">Фейсбук</span>
               </a>
               <a href="#" class="social-btn social-btn--instagram" title="Мы в Инстаграме">
-                <span class="social-btn__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="39" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAQAAADt9kobAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIkSURBVEjHtZbhlaIwFEYvcyiADiYlZCowW8HawWY60ArUCpitADrQqUCsALYC3Aqgg8yPBIxI0HHZj3PEkOQm7+XlJRFhSZYskCT9l5aKEwcqvilNjcFgaDj2T+O+1ejHUUuHOqIRgzqB5uiQy/uohD0GQ3YDuoZmGAx7zxGj3qoxlKgHbFCUGGpkGNZgyKZHvLIkw9CMA4WDfU8WOOKY8glYByy7QuTeWzYU/PAMkRMeLKho+9IRxY6tb6ih8Xym+wgLPY0XeQkNxhocA7ABdv14SzIg529wdq9oMloOALTsSNnwfplb7TWuMcGoT1AoBHqkj1uQFMPqyvCSkFYufGF/AbjvKbwASyD3cPAZxCX97x/X1iq3nBiBoPDWaUwCwZkzkLMAft+0aClQiBgJnCZQktSFTMGayguma51QSIurBlW/WHi4hIpPfqI4ei3FoE8FyNhN9da4i97JgS2abCK0W7BLcasdERERb0DRL1NOAby5ut1Yx3Fcp2Tg1xNM55tpHMBr4P8ELjRiQYvu85lE01JMWMKLXZHgcGugJEWTUrryuCRQxVTghcVQOZC6Ldiy9nbPUAuLO3NGkQT3Rc4BhaSa3DsJyu2bkRSwv+dybPYWfcmlgA7waILqFEhQMXAmR7Pio3f/nozFnfTpL8sKQW5N7eY3S3L/L0dP59p/PhgvmvnYnvlSYYEzXnnsiDNeyKxmvC52evIyG00gn7hqfwEoOx5a+1H5rwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MjoxNCswMDowMIhPxvEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDI6MTQrMDA6MDD5En5NAAAAAElFTkSuQmCC" opacity="0.3"/></svg>
-                </span>
-                <span class="visually-hidden">Инстаграм</span></a>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
               <a href="#" class="social-btn social-btn--twitter" title="Мы в Твиттере">
-                <span class="social-btn__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><filter filterUnits="objectBoundingBox" width="100" height="100"><feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/><feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/><feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/></filter><image width="38" height="38" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAQAAAACNCElAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAIBSURBVEjHrZbbjdswEEXPBvkPS3A6YAdROlAJKsElKBUIqYBIBUoH2lRAd0B3QHcw+SCl5Uv22tAIECCSczWPOzN8Y08UPT/Q6GTtwoV//OXGE3LCIPGxLPGx25rh9DkgFYE8E1212zHhI6B6BNXjERzD3VMDDsHT3zs0IQjj43+iGBGEae+AQfAN1/akwyOYPat8lrvHovEt6/oXoD7gstgpPPKEg7mzgk+jbBDGl6AAxjRyJwT3iQzuicIhK40N8oBXQQZmFkw8OyRhGVbbFIIv1KYqGSopJsHiEJZk3yOogDoVilLldkGwaKDfYH1SoVPwzlR5DPkRPOe4orOofljZZToGLFI4GTbOCILjzImxiOrQKCXBxlchHo9CsyRx6pP9EWEudCzyBapWp1EoFq785Du/eOfGjWtx6k/xfYOvDQqoCKl559ok87eGCdHXpVqr6q12qSL5Etys5Tcw7cKd0Fz2LLON1ZD8uQlmkI00uUaDGgAzgm8WmS67RGqUaTYfHYdGV6gFwtZ2RdLW5RSkj1NorqBazsdyqgv9zMgYCeuzknEIttms/JrfsgWtnHfbnFL0Ebw9LbcWVDfHbisjl01yt0OWrDm22rZmSirTYu6QOGvbBw+UQ0cdHDqE18gddD1YrTvo4hJid9iVKvzzsMtekBevoW93LHz6gvwf8jJEbslfqNoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMjVUMTg6NDI6MDMrMDA6MDCBQvjhAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTI1VDE4OjQyOjAzKzAwOjAw8B9AXQAAAABJRU5ErkJggg==" opacity="0.3"/></svg>
-                </span>
-                <span class="visually-hidden">Твиттер</span></a>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
             </div>
           </div>
           <div class="right-column narrow-column">
             <div class="user-block">
-              <a href="#" class="user-block__btn user-block__btn--enter">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><image width="13" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMBAMAAABLmSrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSX///9Z58oZAAAAC3RSTlMAYO9AgI+/IM8Q3x/lXjUAAAABYktHRAyBs1FjAAAARklEQVQI12NgYBDaJMAABMy7d28G0Sy7d29BpmHiDNG7A0AUY/buRCDF3r179+52BoZZQGr3rglAWRAIYNAG0woMYGr3BgDjpyHnCz1dVQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoxMCswMDowMJPCidwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MTArMDA6MDDinzFgAAAAAElFTkSuQmCC"/></svg>
-                </span>
-                Войти</a>
-              <a href="#" class="user-block__btn user-block__btn--compare">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><image width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAoSURBVAjXY2CAgf8M/xkcIEwmBiyABUPkPwMDE8N/hv/o4li1000QAHttBVDBh1+nAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTEwLTI1VDE4OjQzOjE2KzAwOjAw8BK85gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0xMC0yNVQxODo0MzoxNiswMDowMIFPBFoAAAAASUVORK5CYII="/></svg>
-                </span>
-                Сравнить</a>
-              <a href="#" class="user-block__btn user-block__btn--basket">
-                <span class="user-block__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><image width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABrSURBVBjTbc7RDYQwDAPQp+oG6Cg3QkdgJDboSIUJyiaMUD4KiN5hS4kUx3HoiIqmKaIBs91ksptHocggK33wkW4xjb1pmnpn1D4JtnPv+6hs5NMzMgerN6zEV0fEFfdgJWD5O7Rcf/86EgcB/UHPGyv6tgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0xMC0yNVQxODo0MzoyOSswMDowMIjVy+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMTAtMjVUMTg6NDM6MjkrMDA6MDD5iHNQAAAAAElFTkSuQmCC"/></svg>
-                </span>
-                Корзина</a>
+              <ul class="user-block__list">
+                <li>
+                  <a href="#" class="user-block__btn user-block__btn--enter">Войти</a>
+                </li>
+                <li>
+                  <a href="#" class="user-block__btn user-block__btn--compare">Сравнить</a>
+                </li>
+                <li>
+                  <a href="#" class="user-block__btn user-block__btn--cart">Корзина</a>
+                </li>
+              </ul>
             </div>
             <div class="phone-number">
               <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
             </div>
             <div class="copyright">
               <a href="https://htmlacademy.ru">
-                <img src="img/logo__htmlacademy.svg" width="30" height="36" alt="HTML Academy" title=""HTML Academy">
+                <img src="img/logo__htmlacademy.png" width="27" height="34" alt="HTML Academy" title=""HTML Academy">
               </a>
             </div>
         </div>
