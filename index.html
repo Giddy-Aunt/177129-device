@@ -75,8 +75,16 @@
         <section class="slider">
           <h2 class="visually-hidden">Лучшие товары</h2>
           <div class="slider__wpapper">
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-1" checked>
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-2">
+              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-3">
+            <div class="slider__controls">
+              <label class="slider__indicator  slider__indicator--1" for="slider-control-1"></label>
+              <label class="slider__indicator  slider__indicator--2" for="slider-control-2"></label>
+              <label class="slider__indicator  slider__indicator--3" for="slider-control-3"></label>
+            </div>
             <div class="slider__slides">
-              <div class="slider__slide-wrapper clearfix">
+              <div class="slider__slide  slider__slide--1  clearfix">
                 <div class="slider__picture-wrapper left-column half-width-column">
                   <img class="slider__picture" src="img/photo__slider-1.png" alt="Палка для селфи" width="384" height="486">
                 </div>
@@ -101,13 +109,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__slide-wrapper clearfix">
+              <div class="slider__slide  slider__slide--2  clearfix">
                 <div class="slider__picture-wrapper left-column half-width-column">
                   <img class="slider__picture" src="img/photo__slider-2.png" alt="Фитнесс-браслет" width="345" height="485">
                 </div>
                 <div class="slider__text-wrapper right-column half-width-column">
                   <div class="slider__slide-number">02</div>
-                  <b class="slider__slogan">Худеем правильно!</b>
+                  <b class="slider__slogan">Худеем<br>правильно!</b>
                   <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                   <a href="" class="btn">Подробнее</a>
                   <ul class="slider__product-parameters">
@@ -118,7 +126,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="slider__slide-wrapper clearfix">
+              <div class="slider__slide   slider__slide--3  clearfix">
                 <div class="slider__picture-wrapper left-column half-width-column">
                   <img class="slider__picture" src="img/photo__slider-3.png" alt="Квадрокоптер" width="526" height="334">
                 </div>
@@ -139,14 +147,6 @@
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="slider__controls">
-              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-1" checked>
-              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-2">
-              <input type="radio"  class="radio-control" name="slider-control" id="slider-control-3">
-              <label class="slider__control" for="slider-control-1"></label>
-              <label class="slider__control" for="slider-control-2"></label>
-              <label class="slider__control" for="slider-control-3"></label>
             </div>
           </div>
         </section>
@@ -177,25 +177,25 @@
 
         <section class="services">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
-          <input class="radio-control" type="radio" name="tab-control" id="tab-control-1">
+          <div class="services__wrapper clearfix">
+          <input class="radio-control" type="radio" name="tab-control" id="tab-control-1" checked>
           <input class="radio-control" type="radio" name="tab-control" id="tab-control-2">
           <input class="radio-control" type="radio" name="tab-control" id="tab-control-3">
-          <div class="services__wrapper clearfix">
             <div class="services__tab-controls  left-column">
-              <label  class="services__tab-control btn" for="tab-control-1">Доставка</label>
-              <label  class="services__tab-control btn" for="tab-control-2">Гарантия</label>
-              <label  class="services__tab-control btn" for="tab-control-3">Кредит</label>
+              <label  class="services__tab-control  services__tab-control--1  btn" for="tab-control-1">Доставка</label>
+              <label  class="services__tab-control  services__tab-control--2  btn" for="tab-control-2">Гарантия</label>
+              <label  class="services__tab-control  services__tab-control--3  btn" for="tab-control-3">Кредит</label>
             </div>
             <div class="services__tab-content  right-column">
-              <div class="text-block">
+              <div class="text-block text-block--1">
                 <h3 class="text-block__title">Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
-              <div class="text-block">
+              <div class="text-block text-block--2">
                 <h3 class="text-block__title">Гарантия</h3>
                 <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
-              <div class="text-block">
+              <div class="text-block text-block--3">
                 <h3 class="text-block__title">Кредит</h3>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               </div>
