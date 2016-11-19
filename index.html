@@ -239,7 +239,9 @@
             <section class="text-block  text-block--contacts">
               <h2 class="text-block__title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-              <div class="map" id="map"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></div>
+              <div class="map">
+                <a href="#" class="map-link"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></a>
+                </div>
               <a href="#" class="btn">Напишите нам</a>
             </section>
           </div>
@@ -295,14 +297,12 @@
             </div>
             <div class="copyright">
               <a href="https://htmlacademy.ru">
-                <img src="img/logo__htmlacademy.png" width="27" height="34" alt="HTML Academy" title=""HTML Academy">
+                <img src="img/logo__htmlacademy.png" width="27" height="34" alt="HTML Academy" title="HTML Academy">
               </a>
             </div>
         </div>
         </div>
       </div>
-    </footer>
-
 
     <div class="hidden popup popup-map">
       <div class="map"></div>
@@ -310,25 +310,33 @@
     </div>
 
 
+    </footer>
+
+
+
+
+
     <div class="hidden popup popup-feedback">
       <form class="feedback-form" action="#" method="get">
-      <div class="column-wrapper clearfix">
-      <fieldset class="left-column half-width-column">
-      <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
-      <input class="feedback-form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
-      </fieldset>
-      <fieldset class="right-column half-width-colum">
-      <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-      <input class="feedback-form__input" type="email" name="feedback-email" id="feedback-email"  placeholder="Для отправки ответа" required>
-      </fieldset>
-      </div>
-      <fieldset>
-      <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
-      <textarea class="feedback-form__input" name="feedback-text" id="feedback-text"  placeholder="В свободной форме" rows="3" required></textarea>
-      </fieldset>
-      <button class="btn" type="submit">Отправить</button>
+        <div class="column-wrapper clearfix">
+          <fieldset class="left-column half-width-column">
+            <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+            <input class="feedback-form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+          </fieldset>
+          <fieldset class="right-column half-width-column">
+            <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
+            <input class="feedback-form__input" type="email" name="feedback-email" id="feedback-email"  placeholder="Для отправки ответа" required>
+          </fieldset>
+        </div>
+        <fieldset>
+          <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
+          <textarea class="feedback-form__input" name="feedback-text" id="feedback-text"  placeholder="В свободной форме" rows="7" required></textarea>
+        </fieldset>
+        <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="close-btn" type="button">Закрыть</button>
     </div>
+
+
   </body>
 </html>
