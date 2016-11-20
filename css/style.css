@@ -608,16 +608,10 @@ h3 {
   margin: 0;
   padding: 0;
   padding: 28px 60px;
-  padding-right: 40%;
+  padding-right: 35%;
 
   list-style: none;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 36px;
-  font-family: "Open Sans", sans-serif;
-  color: #000000;
-  text-transform: none;
-  letter-spacing: 0.01em;
+  font-size: 0;
 
   background-color: #f7e296;
 }
@@ -628,6 +622,13 @@ h3 {
   margin-right: 20px;
 
   text-align: left;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .main-navigation__drop-down-item:nth-last-child(2) {
@@ -2319,16 +2320,21 @@ input[type="checkbox"]:checked + .filter__checkbox-label:active::after {
 
 
 @media all and (min-width: 1200px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .catalog-wrapper::before {
     right: 1200px;
-    left: calc(-50vw + 600px - 20px);
+    left: calc(-50vw + 600px - 20px - 8px);
 
     width: calc(50vw - 600px + 30px);
   }
 
   .filter__title-wrapper::before {
     right: 350px;
-    left: calc(-50vw + 600px - 20px);
+    left: calc(-50vw + 600px - 20px - 8px);
 
     width: calc(50vw - 600px + 30px);
   }
@@ -2343,6 +2349,7 @@ input[type="checkbox"]:checked + .filter__checkbox-label:active::after {
   .services::before {
     left: calc(-50vw + 600px - 20px);
 
-    width: 100vw;
+    width: calc(100vw);
   }
+
 }
