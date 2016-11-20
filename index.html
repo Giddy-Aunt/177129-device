@@ -57,7 +57,7 @@
                 <li class="main-navigation__drop-down-item"><a href="#">Виртуальная реальность</a></li>
                 <li class="main-navigation__drop-down-item"><a href="#">Фитнесс-браслеты</a></li>
                 <li class="main-navigation__drop-down-item"><a href="#">Квадрокоптеры</a></li>
-                <li class="main-navigation__drop-down-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="main-navigation__drop-down-item"><a href="catalog.html">Моноподы для селфи</a></li>
                 <li class="main-navigation__drop-down-item"><a href="#">Умные часы</a></li>
                 <li class="main-navigation__drop-down-item"><a href="#">Экшн-камеры</a></li>
               </ul>
@@ -240,9 +240,9 @@
               <h2 class="text-block__title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <div class="map">
-                <a href="#" class="map-link"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></a>
+                <a href="https://goo.gl/maps/KhdN2fd7xVQ2" class="map-link"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением магазина"></a>
                 </div>
-              <a href="#" class="btn">Напишите нам</a>
+              <a href="#" class="btn btn--feedback">Напишите нам</a>
             </section>
           </div>
         </div>
@@ -305,7 +305,9 @@
       </div>
 
     <div class="hidden popup popup-map">
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479595966208" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <button class="close-btn" type="button">Закрыть</button>
     </div>
 
@@ -321,22 +323,22 @@
         <div class="column-wrapper clearfix">
           <fieldset class="left-column half-width-column">
             <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
-            <input class="feedback-form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+            <input class="feedback-form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста">
           </fieldset>
           <fieldset class="right-column half-width-column">
             <label class="feedback-form__label" for="feedback-email">Ваш e-mail:</label>
-            <input class="feedback-form__input" type="email" name="feedback-email" id="feedback-email"  placeholder="Для отправки ответа" required>
+            <input class="feedback-form__input" type="email" name="feedback-email" id="feedback-email"  placeholder="Для отправки ответа">
           </fieldset>
         </div>
         <fieldset>
           <label class="feedback-form__label" for="feedback-text">Текст письма:</label>
-          <textarea class="feedback-form__input" name="feedback-text" id="feedback-text"  placeholder="В свободной форме" rows="7" required></textarea>
+          <textarea class="feedback-form__input" name="feedback-text" id="feedback-text"  placeholder="В свободной форме" rows="7"></textarea>
         </fieldset>
         <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="close-btn" type="button">Закрыть</button>
     </div>
 
-
+  <script src="js/modal.js"></script>
   </body>
 </html>
