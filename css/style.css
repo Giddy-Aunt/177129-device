@@ -2179,16 +2179,15 @@ input[type="checkbox"]:checked + .filter__checkbox-label:active::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
 .popup .close-btn:hover {
   background-color: rgba(240, 197, 46, 1);
-};
+}
 
 .popup .close-btn:active::before,
 .popup .close-btn:active::after {
   background-color: (225, 225, 225, 0.3);
 }
-
-
 
 .feedback-form__input {
   display: block;
